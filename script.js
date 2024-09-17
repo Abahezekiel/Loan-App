@@ -2,8 +2,8 @@ let loan_section = document.getElementById("loansection");
 let amount_error = document.getElementById("amount_Err");
 let point = 0;
 let first = document.getElementById("first");
-// let username = prompt("what is your name");
-// first.innerHTML = `welcome ${username}, Fill in correct details in the form below`;
+let username = prompt("what is your name");
+first.innerHTML = `welcome ${username}, Fill in correct details in the form below`;
 let congrt = document.getElementById('congrt');
 
 
@@ -74,6 +74,7 @@ let name = document.getElementById('name');
       "Thank you for contacting EazyMoney about your credit needs. Unfortunately, after careful review of your application, we must decline your loan request at this time. However, we would gladly reconsider your request, Kindly reachout to our customer care agent."
     );
   }
+  
 
 
 }
