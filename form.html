@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="query.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <nav class="nav-left">
+        <!-- EazyMoney -->
+        <img src="images/Screen Shot 2024-08-30 at 11.17.23 PM.png" alt="" />
+      </nav>
+      <nav class="nav-right">
+        <a href="index.html">Home</a>
+        <a href="">Company</a>
+        <a href="">Contact</a>
+        <a href="">FAQ</a>
+        <a href="form.html" class="btn2">Apply</a>
+
+      </nav>
+    </nav>
+
+
+
+  
+
+    <div class="eazyloan">
+      <h1>EazyMoney Quick Loan Form</h1>
+      <div class="form-section">
+        <form action="loan_form" id="loan_section">
+          <h1 id="first"></h1>
+
+          <div>
+            <label for="surname">Surname</label> <br />
+            <input type="text" id="surname" placeholder="Surname" />
+          </div>
+          </BR>
+          <div>
+            <label for="firstname">Firstname</label> <br />
+            <input type="text" id="firstname" placeholder="Firstname" />
+          </div>
+          </BR>
+          <div>
+            <label for="current_balance"
+              >Current Total Balance in Account</label
+            >
+            <br />
+            <input
+              type="number"
+              id="current_balance"
+              placeholder="Current Amount"
+            />
+            <span id="amount_error"></span>
+          </div>
+          <br />
+
+          <div>
+            <label for="current_balance"
+              >Loan Amount</label
+            >
+            <br />
+            <input
+              type="number"
+              id="amount_to_collect"
+              placeholder="Loan Amount"
+            />
+          </div>
+          <br />
+
+          <div>
+            <label for="credit_history">Credit History</label> <br />
+            <select id="credit_history">
+              <!-- (6months) -->
+              <option value="">Credit History</option>
+              <option value="less">a month ago</option>
+              <option value="high">6 months ago</option>
+            </select>
+            <br />
+            <br />
+
+            <div>
+              <label for="Last_Deposit">Last Deposit Date</label> <br />
+              <select id="Last_Deposit">
+                <option value="">Last Deposit Date</option>
+                <option value="less">a week ago</option>
+                <option value="high">3 weeks ago</option>
+              </select>
+            </div>
+            <br />
+
+            <div>
+              <label for="Last_Loan">Last Loan Collection Date</label> <br />
+              <select id="Last_Loan">
+                <option value="">Last Loan Collection Date</option>
+                <option value="less">a month ago</option>
+                <option value="high">6 month ago</option>
+              </select>
+            </div>
+            <br />
+
+            <div>
+              <label for="Loan_Repay">Loan Repayment Period</label> <br />
+              <select id="Loan_Repay">
+                <option value="">Loan Repayment Period</option>
+                <option value="less">1 month</option>
+                <option value="high">6 month</option>
+              </select>
+            </div>
+            <br />
+
+            <div>
+              <label for="Account Type">Account Type</label> <br />
+              <select id="Account Type">
+                <option value="">Account Type</option>
+                <option value="current">Current</option>
+                <option value="savings">Savings</option>
+              </select>
+            </div>
+          </div>
+          <br/>
+
+          <button onclick="getloan()" type="button" id="btn2">Submit</button>
+          <h1 id="congrat"></h1>
+          <!-- <button onclick="myFunction()" type="button">submit</button> -->
+        </form>
+      </div>
+    </div>
+    <br /><br />
+    <p id="congrt"></p>
+    
+
+    <footer>
+      <div class="foot flex">
+        <div class="col-one">
+          <img
+            src="images/Screen Shot 2024-08-30 at 11.17.23 PM.png"
+            alt=""
+            class="logos"
+          />
+          <img src="images/qrcode_chrome.png" alt="" />
+          <h4>Follow Us</h4>
+          <i class="fa fa-facebook"></i>
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-github"></i>
+        </div>
+
+        <div class="features">
+          <a href=""><b>Carbon account</b></a>
+          <a href="">Payments</a>
+          <a href="">Cards</a>
+          <a href="">Carbon Cycles</a>
+          <a href="">Carbon Investments</a>
+          <a href="">Credit report</a>
+          <a href="">Loans</a>
+        </div>
+
+        <div class="features Company">
+          <a href=""><b>About Us</b></a>
+          <a href="">Careers</a>
+          <a href="">Blog</a>
+        </div>
+
+        <div class="features Help">
+          <a href=""><b>FAQ</b></a>
+          <a href="">Knowledge base</a>
+          <a href="">Contact</a>
+          <a href="">Community</a>
+        </div>
+
+        <div class="features Legal">
+          <a href=""><b>Privacy policy</b></a>
+          <a href="">Terms & Conditions</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
